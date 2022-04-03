@@ -12,6 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <link
+     rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
 </head>
 <body>
     <nav>
@@ -163,7 +168,9 @@
         <h2>Frequently Asked Questions</h2>
         <div class="container faqs__container">
             <article class="faq">
-                <div class="faq__icon"></div>
+                <div class="faq__icon">
+                    <i class="uil uil-plus"></i>
+                </div>
                 <div class="question_answer">
                     <h4>How do I know the right courses for me?</h4>
                     <p>
@@ -173,7 +180,9 @@
             </article>
 
             <article class="faq">
-                <div class="faq__icon"></div>
+                <div class="faq__icon">
+                    <i class="uil uil-plus"></i>
+                </div>
                 <div class="question_answer">
                     <h4>How do I know the right courses for me?</h4>
                     <p>
@@ -183,7 +192,9 @@
             </article>
 
             <article class="faq">
-                <div class="faq__icon"></div>
+                <div class="faq__icon">
+                    <i class="uil uil-plus"></i>
+                </div>
                 <div class="question_answer">
                     <h4>How do I know the right courses for me?</h4>
                     <p>
@@ -193,7 +204,9 @@
             </article>
 
             <article class="faq">
-                <div class="faq__icon"></div>
+                <div class="faq__icon">
+                    <i class="uil uil-plus"></i>
+                </div>
                 <div class="question_answer">
                     <h4>How do I know the right courses for me?</h4>
                     <p>
@@ -203,7 +216,9 @@
             </article>
 
             <article class="faq">
-                <div class="faq__icon"></div>
+                <div class="faq__icon">
+                    <i class="uil uil-plus"></i>
+                </div>
                 <div class="question_answer">
                     <h4>How do I know the right courses for me?</h4>
                     <p>
@@ -213,7 +228,9 @@
             </article>
 
             <article class="faq">
-                <div class="faq__icon"></div>
+                <div class="faq__icon">
+                    <i class="uil uil-plus"></i>
+                </div>
                 <div class="question_answer">
                     <h4>How do I know the right courses for me?</h4>
                     <p>
@@ -223,7 +240,9 @@
             </article>
 
             <article class="faq">
-                <div class="faq__icon"></div>
+                <div class="faq__icon">
+                    <i class="uil uil-plus"></i>
+                </div>
                 <div class="question_answer">
                     <h4>How do I know the right courses for me?</h4>
                     <p>
@@ -233,7 +252,9 @@
             </article>
 
             <article class="faq">
-                <div class="faq__icon"></div>
+                <div class="faq__icon">
+                    <i class="uil uil-plus"></i>
+                </div>
                 <div class="question_answer">
                     <h4>How do I know the right courses for me?</h4>
                     <p>
@@ -243,7 +264,9 @@
             </article>
 
             <article class="faq">
-                <div class="faq__icon"></div>
+                <div class="faq__icon">
+                    <i class="uil uil-plus"></i>
+                </div>
                 <div class="question_answer">
                     <h4>How do I know the right courses for me?</h4>
                     <p>
@@ -253,7 +276,9 @@
             </article>
 
             <article class="faq">
-                <div class="faq__icon"></div>
+                <div class="faq__icon">
+                    <i class="uil uil-plus"></i>
+                </div>
                 <div class="question_answer">
                     <h4>How do I know the right courses for me?</h4>
                     <p>
@@ -265,10 +290,10 @@
     </section>
 
 
-    <section class="container testimonials__container">
+    <section class="container testimonials__container mySwiper">
         <h2>Student Testimonials</h2>
-        <div>
-            <article class="testimonial">
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="./img/avatar1.jpg" alt="avatar">
                 </div>
@@ -283,7 +308,7 @@
                 </div>
             </article>
 
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="./img/avatar2.jpg" alt="avatar">
                 </div>
@@ -298,7 +323,7 @@
                 </div>
             </article>
 
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="./img/avatar3.jpg" alt="avatar">
                 </div>
@@ -313,7 +338,7 @@
                 </div>
             </article>
 
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="./img/avatar4.jpg" alt="avatar">
                 </div>
@@ -328,7 +353,7 @@
                 </div>
             </article>
 
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="./img/avatar5.jpg" alt="avatar">
                 </div>
@@ -343,6 +368,7 @@
                 </div>
             </article>
         </div>
+        <div class="swiper-pagination"></div>
     </section>
 
 
@@ -404,6 +430,27 @@
     </footer>
 
 
+
+    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        breakpoints: {
+            600 : {
+                slidesPerView: 2,
+            }
+        }
+      });
+    </script>
+
 </body>
 </html>

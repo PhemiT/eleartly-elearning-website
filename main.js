@@ -13,7 +13,7 @@ faqs.forEach(faq => {
         faq.classList.toggle('open')
 
         //Change Icon
-        const icon = document.querySelector('.faq__icon i')
+        const icon = faq.querySelector('.faq__icon i')
         if(icon.className === 'uil uil-plus') {
             icon.className = 'uil uil-minus'
         } else {
